@@ -1,0 +1,115 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  /* Ensure body takes full height and centers content */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   position: relative;
+   margin: 0;
+  }
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./Weather.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+  }
+  .app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    min-height: min-content;
+    background-color: #4a00e0;
+    background-image: linear-gradient(30deg, #319bd4 2%, #bae33e 44%,  #319bd4);
+    border-radius: 20px;
+    padding: 50px;
+    color: white;
+    text-align: center;
+  }
+  
+  input {
+    width: 85%;
+    padding: 10px;
+    margin: 20px 0;
+    border: none;
+    margin-right: 10px;
+    border-radius: 20px;
+    outline: none;
+    padding-left: 1rem; /* space for the icon */
+  }
+  .image {
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+  }
+  
+  .area-name {
+    font-size: 2.5rem;
+    margin: 10px 0;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: small;
+  }
+  
+  .humidity,
+  .wind {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 10px;
+  }
+  
+  .hum-content {
+    margin-top: 10px;
+    justify-content: left;
+  }
+  
+  .humidity-percentage,
+  .wind-speed {
+    margin: 5px 0;
+    text-align: left;
+  }
+  
+  .fa-water,
+  .fa-wind {
+    font-size: 1.5rem;
+    margin-right: 20px;
+  }
+  .top-components{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: -30px;
+  }
+  .fa-magnifying-glass-location{
+    color:  #bae33e ;
+    font-size: 1.5rem;
+  }
+  .area{
+    font-size: 1.5rem;
+    margin: 10px 0px;
+  }
